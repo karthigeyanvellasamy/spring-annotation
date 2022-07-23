@@ -2,6 +2,10 @@ package com.spring.learn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.spring.learn.configuration.AppConfig;
 
 /**
  * Noted Packages to look into
@@ -17,7 +21,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringLearnAnnotationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringLearnAnnotationApplication.class, args);
+		 SpringApplication.run(SpringLearnAnnotationApplication.class, args);
+		
+		// ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		// SpringApplication.run(SpringLearnAnnotationApplication.class, args);
 	}
 
 }
